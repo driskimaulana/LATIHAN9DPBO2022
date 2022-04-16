@@ -1,8 +1,8 @@
 from hunian import Hunian
 
 class Apartemen(Hunian):
-    def __init__(self, nama_pemilik, jml_penghuni, jml_kamar):
-        super().__init__("Apartemen", jml_penghuni, jml_kamar)
+    def __init__(self, nama_pemilik, jml_penghuni, jml_kamar, luas_tanah = 0, kapasitas_listrik = 0, lokasi = ""):
+        super().__init__("Apartemen", jml_penghuni, jml_kamar, luas_tanah, kapasitas_listrik, lokasi)
         self.nama_pemilik = nama_pemilik
 
     def get_dokumen(self):
